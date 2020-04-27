@@ -113,7 +113,7 @@ TEST(PracticeTest, is_misplacement5_descending)
     ASSERT_TRUE(a > b && b > c && a > c);
 }
 
-TEST(PracticeTest, is_misplacement4_descending)
+TEST(PracticeTest, is_misplacement6_descending)
 {
     Practice obj;
 		int a = 2;
@@ -133,7 +133,7 @@ TEST(PracticeTest, is_same_num_descending)
     ASSERT_TRUE(a > b && b > c && a > c);
 }
 
-TEST(PracticeTest, is_misplacement4_descending)
+TEST(PracticeTest, is_neg_nums_descending)
 {
     Practice obj;
 		int a = 1;
