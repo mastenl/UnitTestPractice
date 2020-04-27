@@ -48,3 +48,10 @@ TEST(PracticeTest, is_space_palindrome)
     bool actual = obj.isPalindrome("sas bad");
     ASSERT_FALSE(actual);
 }
+
+TEST(PracticeTest, is_sizetest_palindrome)
+{
+    Practice obj;
+    bool actual = obj.isPalindrome("ababa");
+    ASSERT_TRUE(actual);
+}
