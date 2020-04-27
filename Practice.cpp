@@ -7,23 +7,23 @@ using std::string;
 // descending order from greatest (first) to least (third)
 void Practice::sortDescending(int & first, int & second, int & third)
 {
-  if( first < second )
+  if( second < first )
   {
     int temp = first;
     first = second;
     second = temp;
   }
-  if( second < third )
+  if( third > second )
   {
     int temp = second;
     second = third;
     third = temp;
-  }
-  if( first < third )
-  {
-    int temp = first;
-    first = third;
-    third = temp;
+    if( second > first )
+    {
+      int temp = first;
+      first = second;
+      second = temp;
+    }
   }
 }
 
