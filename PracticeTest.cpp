@@ -55,3 +55,10 @@ TEST(PracticeTest, is_sizetest_palindrome)
     bool actual = obj.isPalindrome("ababa");
     ASSERT_TRUE(actual);
 }
+
+TEST(PracticeTest, is_sizetest_palindrome)
+{
+    Practice obj;
+    bool actual = obj.sortDescending(11,12,90);
+    ASSERT_EQ(90,12,11);
+}
