@@ -42,7 +42,7 @@ TEST(PracticeTest, is_sadtest_palindrome)
     ASSERT_TRUE(actual);
 }
 
-TEST(PracticeTest, is_sadtest_palindrome)
+TEST(PracticeTest, is_space_palindrome)
 {
     Practice obj;
     bool actual = obj.isPalindrome("sas bad");
