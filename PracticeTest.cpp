@@ -56,7 +56,7 @@ TEST(PracticeTest, is_sizetest_palindrome)
     ASSERT_TRUE(actual);
 }
 
-TEST(PracticeTest, is_sizetest_palindrome)
+TEST(PracticeTest, is_misplacement_descending)
 {
     Practice obj;
     bool actual = obj.sortDescending(11,12,90);
