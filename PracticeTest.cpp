@@ -41,3 +41,10 @@ TEST(PracticeTest, is_sadtest_palindrome)
     bool actual = obj.isPalindrome("ab.$.ba");
     ASSERT_TRUE(actual);
 }
+
+TEST(PracticeTest, is_sadtest_palindrome)
+{
+    Practice obj;
+    bool actual = obj.isPalindrome("sas bad");
+    ASSERT_FALSE(actual);
+}
