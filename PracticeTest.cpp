@@ -62,10 +62,6 @@ TEST(PracticeTest, is_misplacement_descending)
 		int a = 3;
 		int b = 1;
 		int c = 2;
-		bool pass = false;
     obj.sortDescending(a,b,c);
-		if(a > b && b > c && a > c){
-			pass = true;
-		}
-    ASSERT_TRUE(pass);
+    ASSERT_TRUE(a > b && b > c && a > c);
 }
