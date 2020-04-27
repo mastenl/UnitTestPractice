@@ -19,7 +19,7 @@ void Practice::sortDescending(int & first, int & second, int & third)
     second = third;
     third = temp;
   }
-  if( firsy < second )
+  if( first < second )
   {
     int temp = first;
     first = second;
