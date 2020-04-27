@@ -59,6 +59,13 @@ TEST(PracticeTest, is_sizetest_palindrome)
 TEST(PracticeTest, is_misplacement_descending)
 {
     Practice obj;
-    bool actual = obj.sortDescending(11,12,90);
-    ASSERT_EQ(90,12,11);
+		int a = 3;
+		int b = 1;
+		int c = 2;
+		bool pass = false;
+    bool actual = obj.sortDescending(a,b,c);
+		if(a > b && b > c){
+			pass = true;
+		}
+    ASSERT_TRUE(pass);
 }
