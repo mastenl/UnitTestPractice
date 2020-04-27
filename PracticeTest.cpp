@@ -130,7 +130,7 @@ TEST(PracticeTest, is_same_num_descending)
 		int b = 1;
 		int c = 1;
     obj.sortDescending(a,b,c);
-    ASSERT_TRUE(a > b && b > c && a > c);
+    ASSERT_TRUE(a > b && b >= c && a > c);
 }
 
 TEST(PracticeTest, is_neg_nums_descending)
