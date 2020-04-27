@@ -21,6 +21,13 @@ TEST(PracticeTest, is_simple_palindrome)
     ASSERT_TRUE(actual);
 }
 
+TEST(PracticeTest, is_one_char_palindrome)
+{
+    Practice obj;
+    bool actual = obj.isPalindrome("a");
+    ASSERT_TRUE(actual);
+}
+
 TEST(PracticeTest, is_not_a_palindrome)
 {
     Practice obj;
@@ -56,12 +63,82 @@ TEST(PracticeTest, is_sizetest_palindrome)
     ASSERT_TRUE(actual);
 }
 
-TEST(PracticeTest, is_misplacement_descending)
+TEST(PracticeTest, is_misplacement1_descending)
 {
     Practice obj;
 		int a = 3;
 		int b = 1;
 		int c = 2;
+    obj.sortDescending(a,b,c);
+    ASSERT_TRUE(a > b && b > c && a > c);
+}
+
+TEST(PracticeTest, is_misplacement2_descending)
+{
+    Practice obj;
+		int a = 3;
+		int b = 2;
+		int c = 1;
+    obj.sortDescending(a,b,c);
+    ASSERT_TRUE(a > b && b > c && a > c);
+}
+
+TEST(PracticeTest, is_misplacement3_descending)
+{
+    Practice obj;
+		int a = 1;
+		int b = 2;
+		int c = 3;
+    obj.sortDescending(a,b,c);
+    ASSERT_TRUE(a > b && b > c && a > c);
+}
+
+TEST(PracticeTest, is_misplacement4_descending)
+{
+    Practice obj;
+		int a = 1;
+		int b = 3;
+		int c = 2;
+    obj.sortDescending(a,b,c);
+    ASSERT_TRUE(a > b && b > c && a > c);
+}
+
+TEST(PracticeTest, is_misplacement5_descending)
+{
+    Practice obj;
+		int a = 2;
+		int b = 1;
+		int c = 3;
+    obj.sortDescending(a,b,c);
+    ASSERT_TRUE(a > b && b > c && a > c);
+}
+
+TEST(PracticeTest, is_misplacement4_descending)
+{
+    Practice obj;
+		int a = 2;
+		int b = 3;
+		int c = 1;
+    obj.sortDescending(a,b,c);
+    ASSERT_TRUE(a > b && b > c && a > c);
+}
+
+TEST(PracticeTest, is_same_num_descending)
+{
+    Practice obj;
+		int a = 3;
+		int b = 1;
+		int c = 1;
+    obj.sortDescending(a,b,c);
+    ASSERT_TRUE(a > b && b > c && a > c);
+}
+
+TEST(PracticeTest, is_misplacement4_descending)
+{
+    Practice obj;
+		int a = 1;
+		int b = -2;
+		int c = -3;
     obj.sortDescending(a,b,c);
     ASSERT_TRUE(a > b && b > c && a > c);
 }
